@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "prod": "SET NODE_ENV=production & nodemon app.js",
+    "lint:fix": "eslint --fix ./*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.4",
+    "morgan": "^1.10.0",
+    "slugify": "^1.6.6",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  }
+}
